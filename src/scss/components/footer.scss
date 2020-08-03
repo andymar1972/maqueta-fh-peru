@@ -1,0 +1,46 @@
+.footer{
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  background-color: rgb(240,240,240);
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr 60rem;
+  }
+  &__list{
+    @include reset-list;
+    & li{
+      padding: 1.7rem 0;
+      font-size: 2rem;
+      border-bottom: .1rem solid #000;
+      width: 27rem;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+  &__text{
+    line-height: 1.5;
+    font-size: 2.5rem;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  &__icons{
+    display: flex;
+  }
+  &__icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: .3rem solid $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-left: 1rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    color: $primary-color;
+  }
+}

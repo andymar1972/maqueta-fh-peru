@@ -1,0 +1,44 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  &__top {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(240, 240, 240);
+  }
+  &__list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    & li {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    & a {
+      display: flex;
+      align-items: center;
+      & svg {
+        margin-left: 0.5rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  &__main {
+    background-color: $background;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 10;
+  }
+  &__logo{
+    width: 26rem;
+  }
+}

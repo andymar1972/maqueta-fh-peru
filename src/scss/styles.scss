@@ -3,9 +3,14 @@
 @import "config/fonts";
 //Mixins
 @import "mixins/breakpoints";
+@import "mixins/reset-list.scss";
 //Estilos base
 @import "base/normalize";
 @import "base/base";
 //Componentes
-@import "components/header.scss";
+@import "components/header";
+@import "components/main-menu";
+@import "components/banner";
+@import "components/buttons";
+@import "components/footer.scss";
 //Paginas

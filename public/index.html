@@ -23,35 +23,87 @@
     <meta name="twitter:description" content=""/>
     <meta name="twitter:image:src" content=""/>
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1596465574268"/>
-    <script src="assets/fontawesome/js/all.min.js?t=1596465574268"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1596477411931"/>
+    <script src="assets/fontawesome/js/all.min.js?t=1596477411931"></script>
+    <!--GLIDE-->
+    <link rel="stylesheet" href="assets/glide/dist/css/glide.core.min.css?t=1596477411931"/>
+    <link rel="stylesheet" href="assets/glide/dist/css/glide.theme.min.css?t=1596477411931"/>
     <!--STYLE BASE-->
-    <link rel="stylesheet" href="css/styles.css?t=1596465574268"/>
+    <link rel="stylesheet" href="css/styles.css?t=1596477411931"/>
     <title>Document</title>
     <meta name="description" content="content"/>
   </head>
   <body>
     <header class="header">
-      <div class="header__top container"><a href="#">INICIAR SESIÓN</a><a href="#">REGISTRATE</a></div>
-      <div class="header__main">
+      <div class="header__top container">
+        <ul class="header__list">
+          <li><a href="#">INICIAR SESIÓN</a></li>
+          <li><a href="#">REGISTRATE</a></li>
+          <li><a href="#">ESPAÑOL-INGLES <i class="fas fa-language"></i></a></li>
+        </ul>
+      </div>
+      <div class="header__main container">
         <figure class="header__logo"><a href="index.html">       <img src="assets/img/logo.png" alt="logo de fh peru"/></a></figure>
         <nav class="header__nav">
           <ul class="main-menu">
-            <li class="main-menu__item"><a href="index.html">INICIO</a></li>
-            <li class="main-menu__item"><a href="index.html">CONÓCENOS</a></li>
-            <li class="main-menu__item"><a href="index.html">NUESTRO TRABAJO</a></li>
-            <li class="main-menu__item"><a href="index.html">BLOG</a></li>
-            <li class="main-menu__item"><a href="index.html">DONA</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">INICIO</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">CONÓCENOS</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">NUESTRO TRABAJO</a>
+              <ul class="main-menu__subitem">
+                <li><a href="#">NUESTROS PROYECTOS</a></li>
+                <li><a href="#">SÚMATE</a></li>
+              </ul>
+            </li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">BLOG</a></li>
+            <li class="main-menu__item"><a class="main-menu__link--modify" href="index.html">DONA <i class="far fa-heart"></i></a>
+              <ul class="main-menu__subitem">
+                <li><a href="#">EMPRESAS</a></li>
+                <li><a href="#">PERSONAS</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </div>
-    </header>
+    </header><div class="glide banner">
+<div data-glide-el="track" class="glide__track">
+<ul class="glide__slides banner__slider">
+<li class="glide__slide banner__item">
+    <figure class="banner__img"><img src="assets/img/banner1.jpg" alt=""/></figure>
+    <div class="banner__data container">
+      <p class="banner__title">¿DÓNDE PUEDO CONSEGUIRLO?</p>
+      <P class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias similique laudantium quae quidem voluptatum mollitia iusto quo sed et at vitae vel omnis dignissimos, magnam, fuga natus iure doloremque? Unde!</P><a class="button" href="#">SABER MÁS</a>
+    </div></li>
+<li class="glide__slide banner__item">
+    <figure class="banner__img"><img src="assets/img/banner2.jpg" alt=""/></figure>
+    <div class="banner__data container">
+      <p class="banner__title">Start at specific slide number defined with zero-based index.</p><a class="banner__button button" href="#">SABER MÁS</a>
+    </div></li>
+</ul>
+</div>
+<div class="glide__bullets" data-glide-el="controls[nav]">
+<button class="glide__bullet" data-glide-dir="=0"></button>
+<button class="glide__bullet" data-glide-dir="=1"></button>
+<button class="glide__bullet" data-glide-dir="=2"></button>
+</div>
+</div>
     <main class="main">
     </main>
     <footer class="footer">
-      <div class="footer__container container"></div>
+      <div class="footer__container container">
+        <ul class="footer__list">
+          <li><a href="#">CONTÁCTANOS</a></li>
+          <li><a href="#">PREGUNTAS FRECUENTES</a></li>
+          <li><a href="#">TRABAJA CON NOSOTROS</a></li>
+        </ul>
+        <div class="footer__data">
+          <p class="footer__text">Puedes contactarte con nosotros si tienes alguna pregunta o sugerencia. Correo: info@fh.org / Teléfono: +51- xxxxxx Redes: fb, instagram, youtube.</p>
+          <div class="footer__icons"><a class="footer__icon" href="#">
+               <i class="fab fa-twitter"></i></a><a class="footer__icon" href="#"><i class="fab fa-facebook-f"></i></a><a class="footer__icon" href="#"><i class="fab fa-instagram"></i></a></div>
+        </div>
+      </div>
     </footer>
-    <script src="js/jquery.js?t=1596465574268"></script>
-    <script src="js/scripts-min.js?t=1596465574268"></script>
+    <script src="js/jquery.js?t=1596477411931"></script>
+    <script src="assets/glide/dist/glide.min.js?t=1596477411931"></script>
+    <script src="js/scripts-min.js?t=1596477411931"></script>
   </body>
 </html>
