@@ -1,6 +1,37 @@
-.button{
+.button {
   display: inline-block;
   background-color: $secondary-color;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
+}
+
+%button-long {
+  font-size: 2.5rem;
+  background-color: $primary-color;
+  display: flex;
+  color: $white;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color,color;
+  transition-duration: .5s;
+  &:hover {
+    color: $white;
+    background-color: $primary-color;
+  }
+  & svg {
+    margin-left: 1rem;
+  }
+  z-index: 10;
+}
+
+.button-long {
+  @extend %button-long;
+}
+.button-long--orange {
+  @extend %button-long;
+  background-color: $secondary-color;
+}
+.button-long--purple {
+  @extend %button-long;
+  background-color: $fourth-color;
 }
