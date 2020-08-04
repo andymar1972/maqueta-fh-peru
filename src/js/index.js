@@ -6,4 +6,10 @@ var glide = new Glide("#intro", {
 
 });
 
+var glide = new Glide("#catalogo", {
+  type: "carousel",
+  perView: 3,
+
+});
+
 glide.mount();
