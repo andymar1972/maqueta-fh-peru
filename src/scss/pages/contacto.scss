@@ -1,0 +1,26 @@
+.contacto{
+  &__form{
+    margin-top: 4rem;
+  }
+  &__data{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: start;
+    gap: 3rem;
+  }
+  &__item{
+    color: $white;
+    display: flex;
+    align-items: center;
+    & svg{
+      font-size: 4rem;
+      color: $primary-color;
+    }
+    & p{
+      margin-left: 2rem;
+      font-weight: 700;
+      letter-spacing: .1rem;
+    }
+  }
+}

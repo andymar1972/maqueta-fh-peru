@@ -4,4 +4,36 @@ block main
     .contacto__container.container
       h2.contacto__title.title CONTÁCTANOS
       p.subtitle Para realizar una consulta genera electrónico complete el siguiente formulario. Le responderemoslo antes posible
-      
+      form.contacto__form.form--contacto
+        .form__group
+          input.input(type="text" placeholder="NOMBRE")
+        .form__group
+          input.input(type="text" placeholder="APELLIDOS")
+        .form__group
+          input.input(type="text" placeholder="CORREO ELECTRÓNICO")
+        .form__group
+          input.input(type="text" placeholder="CELULAR")
+        .form__group
+          input.input(type="text" placeholder="ASUNTO")
+        .form__group
+          textarea.input(name="", cols="30", placeholder="COMENTARIO")
+        figure.form__group
+          img(src=`${img}`, alt="imagen")
+        .form__group
+          button.button-long(type='submit') ENVIAR      
+        .form__group
+          input(type="checkbox", name="" id="checkform")
+          label(for="checkform") Acepto los términos y condiciones de FH PERÚ
+      .contacto__data
+        .contacto__item
+          <i class="fas fa-globe"></i>
+          p DIRECCIÓN XXXXXXXXXXXXXXXXXXXXXX
+        .contacto__item
+          <i class="fas fa-globe"></i>
+          p EMAIL: XXXXXX@FHPERU.ORG
+        .contacto__item
+          <i class="fas fa-globe"></i>
+          p TELÉFONO XXXXXXXXX
+        .contacto__item
+          <i class="fas fa-globe"></i>
+          p HORARIO: LUNES A VIERNES DE 8:30 A.M A 4P.M
