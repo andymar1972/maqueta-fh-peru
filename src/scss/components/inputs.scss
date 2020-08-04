@@ -1,0 +1,14 @@
+.input{
+  display: block;
+  width: 100%;
+  padding: 2rem 3rem;
+  &::placeholder{
+    font-family: $main-font;
+    color: #000;
+    font-weight: 700;
+  }
+}
+label{
+  color: $white;
+  font-size: 2rem;
+}

@@ -1,0 +1,14 @@
+.blog {
+  &__portada {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}

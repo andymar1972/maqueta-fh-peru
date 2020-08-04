@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  // position: sticky;
   top: 0;
   z-index: 15;
   &__top {
@@ -29,7 +29,7 @@
       }
     }
   }
-  &__main {
+  %main {
     background-color: $background;
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,24 @@
     padding-bottom: 3rem;
     z-index: 10;
   }
-  &__logo{
+  &__main {
+    @extend %main;
+    &--modify {
+      @extend %main;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 93%;
+        height: 0.1rem;
+        background-color: $primary-color;
+      }
+    }
+  }
+  &__logo {
     width: 26rem;
   }
 }

@@ -1,0 +1,95 @@
+include ../config/config 
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //FAVICON
+    link(rel="shortcut icon", href=`${favicon}`)
+    //OPEN GRAPH
+    meta(property="og:title" content=`${tituloRedes}`)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content=`${urlWeb}`)
+    meta(property="og:image" content=`${imgWeb}`)
+    meta(property="og:description" content=`${descripccionRedes}`)
+    //SCHEMA MARKUP FOR GOOGLE
+    meta(itemprop="name" content=`${tituloRedes}`)
+    meta(itemprop="description" content=`${descripccionRedes}`)
+    meta(itemprop="image" content=`${imgWeb}`)
+    //TWITTER CARD DATA
+    meta(name="twitter:card" content=`${twitterCard}`)
+    meta(name="twitter:site" content=`${urlWeb}`)
+    meta(name="twitter:title" content=`${tituloRedes}`)
+    meta(name="twitter:description" content=`${descripccionRedes}`)
+    meta(name="twitter:image:src" content=`${imgWeb}`)
+    //FONTAWESOME
+    link(rel="stylesheet", href="assets/fontawesome/css/all.min.css")
+    script(src="assets/fontawesome/js/all.min.js")
+    //GLIDE
+    link(rel="stylesheet", href="assets/glide/dist/css/glide.core.min.css")
+    link(rel="stylesheet", href="assets/glide/dist/css/glide.theme.min.css")
+    //STYLE BASE
+    link(rel="stylesheet", href="css/styles.css")
+    title Document
+    meta(name="description" content="content")
+  body
+    header.header
+      .header__top.container
+        ul.header__list
+          li
+            a(href="#") INICIAR SESIÓN
+          li
+            a(href="#") REGISTRATE
+          li
+            a(href="#") ESPAÑOL-INGLES <i class="fas fa-language"></i>
+      .header__main--modify.container
+        figure.header__logo
+          a(href="index.html")        
+            img(src="assets/img/logo.png", alt="logo de fh peru")
+        nav.header__nav
+          ul.main-menu
+            li.main-menu__item
+              a.main-menu__link(href="index.html") INICIO
+            li.main-menu__item
+              a.main-menu__link(href="index.html") CONÓCENOS
+            li.main-menu__item
+              a.main-menu__link(href="index.html") NUESTRO TRABAJO
+              ul.main-menu__subitem
+                li
+                  a(href="#") NUESTROS PROYECTOS
+                li
+                  a(href="#") SÚMATE
+            li.main-menu__item
+              a.main-menu__link(href="index.html") BLOG
+            li.main-menu__item
+              a.main-menu__link--modify(href="index.html") DONA <i class="far fa-heart"></i>
+              ul.main-menu__subitem
+                li
+                  a(href="#") EMPRESAS
+                li
+                  a(href="#") PERSONAS
+    block banner
+    main.main
+      block main
+    footer.footer
+      .footer__container.container
+        ul.footer__list
+          li
+            a(href="#") CONTÁCTANOS
+          li
+            a(href="#") PREGUNTAS FRECUENTES
+          li
+            a(href="#") TRABAJA CON NOSOTROS
+        .footer__data
+          p.footer__text Puedes contactarte con nosotros si tienes alguna pregunta o sugerencia. Correo: info@fh.org / Teléfono: +51- xxxxxx Redes: fb, instagram, youtube.
+          .footer__icons
+            a(href="#").footer__icon 
+              <i class="fab fa-twitter"></i>
+            a(href="#").footer__icon
+              <i class="fab fa-facebook-f"></i>
+            a(href="#").footer__icon
+              <i class="fab fa-instagram"></i>
+    
+    script(src="js/jquery.js")
+    script(src="assets/glide/dist/glide.min.js")
+    script(src="js/scripts-min.js")

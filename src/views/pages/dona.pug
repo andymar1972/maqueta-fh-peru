@@ -1,0 +1,91 @@
+extends ../templates/template2
+block main
+  section.info.section
+    .info__container.container
+      h2.title EMPRESAS TRANSFORMADORAS
+      p.subtitle ¿POR QUÉ SON NECESARIAS LAS COLABORACIONES ENTRE LAS EMPRESAS Y LAS ONG?
+      .info__grid
+        .info__item
+          <i class="fas fa-globe"></i>
+          p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
+        .info__item
+          <i class="fas fa-globe"></i>
+          p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
+        .info__item
+          <i class="fas fa-globe"></i>
+          p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
+  section.dona-colaborar.section
+    .dona-colaborar.container
+      h2.title ¿CÓMO COLABORAR?
+      p.dona-colaborar__subtitle.subtitle Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+      .dona-colaborar__form.form-main
+        figure.form-main__img
+          img(src=`${img}`, alt="")
+        form.form-main__form(action="")
+          .form-main__group
+            input.input(type="text" placeholder="RUC")
+          .form-main__group
+            input.input(type="text" placeholder="NOMBRE")
+          .form-main__group
+            input.input(type="text" placeholder="RAZÓN SOCIAL")
+          .form-main__group
+            input.input(type="text" placeholder="APELLIDOS")
+          .form-main__group
+            input.input(type="text" placeholder="CORREO ELECTRÓNICO")
+          .form-main__group
+            input.input(type="text" placeholder="TELEFONO DE CONTACTO")
+          .form-main__group--full
+            textarea.form-main__textarea.input(name="", cols="30", rows="10" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ?,DÉJANOS TUS CONSULTAS O COMENTARIOS...")
+            button.button(type='submit') ENVIAR
+          .form-main__group
+            input(type="checkbox", name="" id="checkform")
+            label(for="checkform") Acepto los términos y condiciones de FH PERÚ
+  section.dona-empresas.section
+    .dona-empresas.container
+      h2.title EMPRESAS ALIADAS
+      <div id="intro" class="glide dona-empresas__slider">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure
+                  img(src=`${img}`, alt="")
+            </li>
+          </ul>
+        </div>
+          <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-caret-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-caret-right"></i></button>
+        </div>
+      </div>
+
+      
+
+
+
+
