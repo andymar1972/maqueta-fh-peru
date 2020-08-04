@@ -55,8 +55,11 @@ span {
   padding-right: 7rem;
 }
 .section {
-  padding: 4rem 0;
+  padding: 0rem 0 6rem;
   background-color: $background;
+  &:first-child{
+    padding: 6rem 0;
+  }
 }
 .title{
   color:$white;

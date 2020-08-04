@@ -1,0 +1,60 @@
+.conocenos {
+  padding-bottom: 14rem;
+  &__grid {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 28rem);
+    gap: 2rem;
+  }
+  %item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item {
+    @extend %item;
+    border: 0.1rem solid $primary-color;
+    &--orange {
+      @extend %item;
+      border: 0.1rem solid $secondary-color;
+    }
+  }
+  &__front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  %title {
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    font-family: $main-font;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+  &__title {
+    @extend %title;
+    color: $primary-color;
+    &--orange {
+      @extend %title;
+      color: $secondary-color;
+    }
+  }
+  &__text {
+    color: $white;
+    max-width: 30rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__img {
+    & img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
