@@ -1,0 +1,76 @@
+extends ../templates/template2
+block main
+  section.detalle-proyecto.section
+    .detalle-proyecto__container.container
+      h2.title NUESTROS PROYECTOS
+      article.detalle-proyecto__item
+        .detalle-proyecto__data
+          h3.detalle-proyecto__title PROYECTO NIÑAS
+          p.detalle-proyecto__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur est pariatur tenetur, earum nesciunt natus molestiae aliquid vitae corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur est pariatur tenetur, earum nesciunt natus molestiae aliquid vitae corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+          p.detalle-proyecto__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur est pariatur tenetur, earum nesciunt natus molestiae aliquid vitae corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur est pariatur tenetur, earum nesciunt natus molestiae aliquid vitae corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+        figure.detalle-proyecto__img
+          img(src=`${img}`, alt="imagen")
+      article.detalle-proyecto__item
+        figure.detalle-proyecto__img
+          img(src=`${img}`, alt="imagen")
+        .detalle-proyecto__data
+          h3.detalle-proyecto__title--modify OBJETIVOS
+          ul
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+      article.detalle-proyecto__item
+        .detalle-proyecto__data
+          h3.detalle-proyecto__title--left OBJETIVOS
+          ul
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+            li.detalle-proyecto__text Corporis illo incidunt temporibus iusto sunt inventore. Quod laboriosam ea illum eligendi!
+        figure.detalle-proyecto__img
+          img(src=`${img}`, alt="imagen")
+      .detalle-proyecto__right
+        a.button(href="") REGRESAR
+      a.detalle-proyecto__dona.button-long(href="") DONA <i class="far fa-heart"></i>
+      section.dona-empresas.section
+    .dona-empresas.container
+      h2.title EMPRESAS ALIADAS
+      <div id="intro" class="glide dona-empresas__slider">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+            <li class="glide__slide">
+              a(href="#" target="_blank")
+                figure.detalle-proyecto__empresa-img
+                  img(src=`${img}`, alt="")
+            </li>
+          </ul>
+        </div>
+          <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-caret-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-caret-right"></i></button>
+        </div>
+      </div>

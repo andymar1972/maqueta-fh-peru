@@ -1,0 +1,22 @@
+.conocenos-page {
+  &__main {
+    display: grid;
+    margin-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    grid-template-rows: 35rem;
+  }
+  &__img {
+    height: 100%;
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    font-size: 2rem;
+    color: $white;
+    line-height: 1.5;
+  }
+}

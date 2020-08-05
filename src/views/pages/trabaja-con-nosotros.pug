@@ -1,0 +1,73 @@
+extends ../templates/template2
+block main
+  section.trabaja.section
+    .trabaja__container.container
+      h2.trabaja__title.title FH ES UN EXCELENTE LUGAR PARA TRABAJAR
+      .trabaja__grid
+        .trabaja__puestos
+          article.card-trabajo
+            figure.card-trabajo__img
+              img(src=`${img}`, alt="imagen")
+            .card-trabajo__data
+              p.card-trabajo__fecha 17 / 7 / 20
+              h3.card-trabajo__title CONTADOR 01
+              p.card-trabajo__text SÉ UN LIDER EN TU CARRERA
+              a.card-trabajo__button.button-long(href="#" target="_blank") DESCARGA LA CONVOCATORIA
+          article.card-trabajo
+            figure.card-trabajo__img
+              img(src=`${img}`, alt="imagen")
+            .card-trabajo__data
+              p.card-trabajo__fecha 17 / 7 / 20
+              h3.card-trabajo__title CONTADOR 01
+              p.card-trabajo__text SÉ UN LIDER EN TU CARRERA
+              a.card-trabajo__button.button-long(href="#" target="_blank") DESCARGA LA CONVOCATORIA
+        .trabaja__form
+          p.trabaja__form__title LLENA EL FORMULARIO
+          .trabaja__form__group
+            input.input(type="text" placeholder="NOMBRE")
+          .trabaja__form__group
+            input.input(type="text" placeholder="ID | DNI | RUC")
+          .trabaja__form__group
+            input.input(type="text" placeholder="APELLIDOS")
+          .trabaja__form__group
+            input.input(type="text" placeholder="TELÉFONO DE CONTACTO")
+          .trabaja__form__group
+            input.input(type="text" placeholder="CORREO ELECTRÓNICO")
+          .trabaja__form__group
+            select.input(name="")
+              option(disabled selected) ELIGE LA CONVOCATORIA 
+              option(value="1") PRUEBA
+          .trabaja__form__group
+            textarea.input(name="", cols="30", placeholder="CONSULTA / COMENTARIO...")
+            .trabaja__form__field
+              label.trabaja__form__action(for="file") SUBIR CV <i class="fas fa-file-upload"></i>
+              input.ocultar#file(type="file", name="")
+            .trabaja__form__field
+              button.trabaja__form__action ENVIAR <i class="far fa-envelope"></i>
+          .trabaja__form__group
+            input(type="checkbox", name="" id="checkform")
+            label(for="checkform") Acepto los términos y condiciones de FH PERÚ
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

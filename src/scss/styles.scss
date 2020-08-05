@@ -18,14 +18,25 @@
 @import "components/noticia.scss";
 @import "components/tabs-scroll.scss";
 @import "components/form-main.scss";
+@import "components/card-trabajo.scss";
 //Layouts
 @import "layout/proyectos.scss";
 @import "layout/conocenos.scss";
 @import "layout/info.scss";
 @import "layout/catalogo.scss";
+@import "layout/info-proyecto.scss";
 //Paginas
 @import "pages/blog.scss";
 @import "pages/dona-colaborar.scss";
 @import "pages/contacto.scss";
 @import "pages/dona-empresas";
 @import "pages/dona-personas.scss";
+@import "pages/pago-proyecto.scss";
+@import "pages/pago-catalogo.scss";
+@import "pages/gracias.scss";
+@import "pages/trabaja.scss";
+@import "pages/login-register.scss";
+@import "pages/detalle-proyecto.scss";
+@import "pages/conocenos-page.scss";
+@import "pages/sumate.scss";
+@import "pages/form-sumate.scss";

@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 html {
@@ -60,23 +60,26 @@ span {
 .section {
   padding: 0rem 0 6rem;
   background-color: $background;
-  &:first-child{
+  &:first-child {
     padding: 6rem 0;
   }
 }
-.title{
-  color:$white;
+.title {
+  color: $white;
   text-align: center;
   font-size: 5rem;
   font-family: $main-title;
   margin: 0;
-  letter-spacing: .4rem;
+  letter-spacing: 0.4rem;
 }
-.subtitle{
+.subtitle {
   color: $white;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   max-width: 74rem;
   font-size: 2.1rem;
+}
+.ocultar {
+  display: none;
 }

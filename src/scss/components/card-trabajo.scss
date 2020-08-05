@@ -1,0 +1,29 @@
+.card-trabajo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: flex-start;
+  &__data {
+    display: flex;
+    color: $white;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__fecha {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+  &__title {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+  &__text {
+    font-size: 2rem;
+  }
+  &__button {
+    margin-top: auto;
+    height: 5rem;
+    font-size: 1.8rem;
+    white-space: nowrap;
+  }
+}

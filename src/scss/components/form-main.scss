@@ -27,6 +27,20 @@
   }
 }
 .form{
+  &--colaboracion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+  &__group{
+    &--colaboracion{
+      &:nth-child(7){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
   &--contacto{
     display: grid;
     grid-template-columns: repeat(3,1fr);

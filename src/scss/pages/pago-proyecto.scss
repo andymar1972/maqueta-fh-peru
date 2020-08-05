@@ -1,0 +1,50 @@
+.pago-proyecto {
+  &__form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    &__img {
+      grid-column: 1/4;
+      grid-row: 1/6;
+    }
+    &__group {
+      &:nth-child(2) {
+        grid-column: 4/7;
+        grid-row: 1/2;
+      }
+      &:nth-child(3) {
+        grid-column: 4/7;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &:nth-child(4) {
+        grid-column: 4/7;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      &:nth-child(5) {
+        grid-column: 4/7;
+        background-color: $primary-color;
+        padding: 0 2rem;
+        & p {
+          display: flex;
+          justify-content: space-between;
+          & span:nth-child(1) {
+            color: $white;
+          }
+        }
+      }
+      &:nth-child(6) {
+        grid-column: 4/7;
+      }
+      &:nth-child(7) {
+        grid-column: 4/7;
+      }
+    }
+  }
+}

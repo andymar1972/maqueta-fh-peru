@@ -1,0 +1,15 @@
+.info-proyecto {
+  &__box {
+    border: 0.1rem solid $primary-color;
+    padding: 4rem 8rem;
+  }
+  &__text {
+    color: $white;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

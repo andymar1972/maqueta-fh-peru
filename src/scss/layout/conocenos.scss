@@ -15,9 +15,15 @@
   &__item {
     @extend %item;
     border: 0.1rem solid $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     &--orange {
       @extend %item;
       border: 0.1rem solid $secondary-color;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   }
   &__front {
