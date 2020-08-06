@@ -91,9 +91,9 @@ input {
   margin: 0;
   letter-spacing: 0.4rem;
   @include b-800 {
-    font-size: 4rem
+    font-size: 4rem;
   }
-  @include b-580{
+  @include b-580 {
     font-size: 3rem;
   }
 }
@@ -109,11 +109,18 @@ input {
     width: 92%;
     font-size: 2rem;
   }
-  @include b-580{
+  @include b-580 {
     width: 100%;
     font-size: 1.8rem;
   }
 }
 .ocultar {
   display: none;
+}
+.glide__arrow {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: $primary-color;
+  }
 }
