@@ -20,7 +20,8 @@ block main
         figure.form__group
           img(src=`${img}`, alt="imagen")
         .form__group
-          button.button-long(type='submit') ENVIAR      
+          button.button-long__icon.button-long--orange(type='submit')
+            <i class="far fa-envelope"></i> ENVIAR      
         .form__group
           input(type="checkbox", name="" id="checkform")
           label(for="checkform") Acepto los términos y condiciones de FH PERÚ

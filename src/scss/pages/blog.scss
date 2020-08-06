@@ -20,6 +20,11 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+    &__data {
+      &--left {
+        order: -1;
+      }
+    }
   }
   &__box {
     background-color: $primary-color;

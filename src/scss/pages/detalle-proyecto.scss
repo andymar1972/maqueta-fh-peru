@@ -1,53 +1,60 @@
-.detalle-proyecto{
-  &__item{
+.detalle-proyecto {
+  &__item {
     margin-top: 5rem;
     display: grid;
     gap: 8rem;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  &__data{
+  &__data {
     color: $white;
-    & li{
+    &--right {
+      order: 2;
+      color: $white;
+      & li {
+        margin-top: 2rem;
+      }
+    }
+    & li {
       margin-top: 2rem;
     }
   }
-  &__title{
+  &__title {
     background-color: $primary-color;
     padding: 2rem;
     font-size: 2.5rem;
     margin-top: 0;
-    &--modify{
+    &--modify {
       text-align: center;
       font-size: 3.5rem;
       margin-top: 0;
     }
-    &--left{
+    &--left {
       text-align: left;
       font-size: 3.5rem;
       margin-top: 0;
     }
   }
-  &__text{
+  &__text {
     line-height: 1.2;
     font-size: 2rem;
   }
-  &__right{
+  &__right {
     margin-top: 3rem;
     display: flex;
     justify-content: flex-end;
   }
-  &__dona{
+  &__dona {
     margin-top: 4rem;
     padding: 2rem 0;
     font-size: 3rem;
     font-weight: 700;
   }
-  &__empresa-img{
+  &__empresa-img {
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    & img{
+    & img {
       object-fit: cover;
       border-radius: 50%;
       width: 15rem;

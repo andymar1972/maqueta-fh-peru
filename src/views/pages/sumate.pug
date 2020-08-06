@@ -4,25 +4,25 @@ block main
     .info__container.container
       h2.title SUMATE A FH PERÚ
       .info__grid
-        .info__item
-          <i class="fas fa-globe"></i>
+        .info__item.border-purple
+          <i class="fas fa-globe color-purple"></i>
           p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
-        .info__item
-          <i class="fas fa-globe"></i>
+        .info__item.border-orange
+          <i class="fas fa-globe color-orange"></i>
           p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
-        .info__item
-          <i class="fas fa-globe"></i>
-          p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure
+        .info__item.border-blue
+          <i class="fas fa-globe color-blue"></i>
+          p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
   section.sumate.section
     .sumate__container.container
-      h2.title PARTNERS
+      h2.title.color-blue PARTNERS
       p.subtitle CONVIÉRTETE EN UN SOCIO Y CAMINA CON NOSOTROS PARA JUNTOS TERMINAR CON LA POBREZA
       .sumate__grid
         figure.sumate__img
           img(src=`${img}`, alt="imagen")
         .sumate__data
           p.sumate__text Como “ptartners o ”socios puedes univerte con nosotros y lograr desarollar nuestros proyectos en las comunidades donde trabajamos, tu alianza fortalecerá la invervención que realizamos y beneficiarás a muchas familias.
-          p.sumate__text-form LLENA EL FORMULARIO
+          p.sumate__text-form.color-blue LLENA EL FORMULARIO
           form.form-sumate(action="")
             .form-sumate__group
               input.input(type="text" placeholder="NOMBRE")
@@ -38,17 +38,17 @@ block main
               input.input(type="text" placeholder="TELÉFONO DE CONTACTO")
             .form-sumate__group
               textarea.input(name="" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ? DÉJANOS TUS CONSULTAS O COMENTARIOS...")
-              button.button ENVIAR
+              button.button.button-icon.button--blue ENVIAR <i class="far fa-envelope"></i>
   section.sumate.section
     .sumate__container.container
-      h2.title PARTNERS
+      h2.title.color-orange EMBAJADORES
       p.subtitle CONVIÉRTETE EN UN SOCIO Y CAMINA CON NOSOTROS PARA JUNTOS TERMINAR CON LA POBREZA
       .sumate__grid
         figure.sumate__img
           img(src=`${img}`, alt="imagen")
         .sumate__data
           p.sumate__text Como “ptartners o ”socios puedes univerte con nosotros y lograr desarollar nuestros proyectos en las comunidades donde trabajamos, tu alianza fortalecerá la invervención que realizamos y beneficiarás a muchas familias.
-          p.sumate__text-form LLENA EL FORMULARIO
+          p.sumate__text-form.color-orange LLENA EL FORMULARIO
           form.form-sumate(action="")
             .form-sumate__group
               input.input(type="text" placeholder="NOMBRE")
@@ -64,17 +64,17 @@ block main
               input.input(type="text" placeholder="TELÉFONO DE CONTACTO")
             .form-sumate__group
               textarea.input(name="" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ? DÉJANOS TUS CONSULTAS O COMENTARIOS...")
-              button.button ENVIAR
+              button.button.button-icon.button--orange ENVIAR <i class="far fa-envelope"></i>
   section.sumate.section
     .sumate__container.container
-      h2.title PARTNERS
+      h2.title.color-purple VOLUNTARIO
       p.subtitle CONVIÉRTETE EN UN SOCIO Y CAMINA CON NOSOTROS PARA JUNTOS TERMINAR CON LA POBREZA
       .sumate__grid
         figure.sumate__img
           img(src=`${img}`, alt="imagen")
         .sumate__data
           p.sumate__text Como “ptartners o ”socios puedes univerte con nosotros y lograr desarollar nuestros proyectos en las comunidades donde trabajamos, tu alianza fortalecerá la invervención que realizamos y beneficiarás a muchas familias.
-          p.sumate__text-form LLENA EL FORMULARIO
+          p.sumate__text-form.color-purple LLENA EL FORMULARIO
           form.form-sumate(action="")
             .form-sumate__group
               input.input(type="text" placeholder="NOMBRE")
@@ -90,4 +90,30 @@ block main
               input.input(type="text" placeholder="TELÉFONO DE CONTACTO")
             .form-sumate__group
               textarea.input(name="" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ? DÉJANOS TUS CONSULTAS O COMENTARIOS...")
-              button.button ENVIAR
+              button.button.button-icon.button--purple ENVIAR <i class="far fa-envelope"></i>
+  section.sumate.section
+    .sumate__container.container
+      h2.title.color-blue TEAM IGLESIA
+      p.subtitle CONVIÉRTETE EN UN SOCIO Y CAMINA CON NOSOTROS PARA JUNTOS TERMINAR CON LA POBREZA
+      .sumate__grid
+        figure.sumate__img
+          img(src=`${img}`, alt="imagen")
+        .sumate__data
+          p.sumate__text Como “ptartners o ”socios puedes univerte con nosotros y lograr desarollar nuestros proyectos en las comunidades donde trabajamos, tu alianza fortalecerá la invervención que realizamos y beneficiarás a muchas familias.
+          p.sumate__text-form.color-blue LLENA EL FORMULARIO
+          form.form-sumate(action="")
+            .form-sumate__group
+              input.input(type="text" placeholder="NOMBRE")
+            .form-sumate__group
+              input.input(type="text" placeholder="ID | DNI |RUC")
+            .form-sumate__group
+              input.input(type="text" placeholder="APELLIDOS")
+            .form-sumate__group
+              input.input(type="text" placeholder="RAZÓN SOCIAL")
+            .form-sumate__group
+              input.input(type="text" placeholder="CORREO ELECTRÓNICO")
+            .form-sumate__group
+              input.input(type="text" placeholder="TELÉFONO DE CONTACTO")
+            .form-sumate__group
+              textarea.input(name="" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ? DÉJANOS TUS CONSULTAS O COMENTARIOS...")
+              button.button.button-icon.button--blue ENVIAR <i class="far fa-envelope"></i>

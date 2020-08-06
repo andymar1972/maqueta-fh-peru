@@ -5,14 +5,14 @@ block main
       h2.title EMPRESAS TRANSFORMADORAS
       p.subtitle ¿POR QUÉ SON NECESARIAS LAS COLABORACIONES ENTRE LAS EMPRESAS Y LAS ONG?
       .info__grid
-        .info__item
-          <i class="fas fa-globe"></i>
+        .info__item.border-purple
+          <i class="fas fa-globe color-purple"></i>
           p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
-        .info__item
-          <i class="fas fa-globe"></i>
+        .info__item.border-orange
+          <i class="fas fa-globe color-orange"></i>
           p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
-        .info__item
-          <i class="fas fa-globe"></i>
+        .info__item.border-blue
+          <i class="fas fa-globe color-blue"></i>
           p.info__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad. Officia, numquam. Quod repellat laboriosam corrupti illum mollitia vitae quasi iure 
   section.dona-colaborar.section
     .dona-colaborar.container
@@ -36,7 +36,7 @@ block main
             input.input(type="text" placeholder="TELEFONO DE CONTACTO")
           .form-main__group--full
             textarea.form-main__textarea.input(name="", cols="30", rows="10" placeholder="¿QUIÉRES SER PARTE DE LA FAMILIA FH PERÚ?,DÉJANOS TUS CONSULTAS O COMENTARIOS...")
-            button.button(type='submit') ENVIAR
+            button.button--blue.button-icon(type='submit') ENVIAR <i class="far fa-envelope"></i>
           .form-main__group
             input(type="checkbox", name="" id="checkform")
             label(for="checkform") Acepto los términos y condiciones de FH PERÚ

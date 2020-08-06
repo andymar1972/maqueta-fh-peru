@@ -12,18 +12,20 @@ block main
             option(value="1") PROYECTO NIÑAS
             option(value="2") PROYECTO NIÑASAS
         .pago-proyecto__form__group
-          button.button PAGO ÚNICO
-          button.button PAGO MENSUAL
+          label(for="pago-unico1").button PAGO ÚNICO
+          input.ocultar#pago-unico1(type="radio", name="tipo-pago")
+          label(for="pago-unico2").button PAGO MENSUAL
+          input.ocultar#pago-unico2(type="radio", name="tipo-pago")
         .pago-proyecto__form__group
-          button.button S/30
-          button.button S/50
-          button.button S/100
+          label.button S/30
+          label.button S/50
+          label.button S/100
         .pago-proyecto__form__group
           p
             span S/80
             span PEN
         .pago-proyecto__form__group
-          button.button-long(type='submit') DONA AHORA 
+          button.button-long--blue(type='submit') DONA AHORA 
         .pago-proyecto__form__group
           input(type="checkbox", name="" id="checkform")
           label(for="checkform") Acepto los términos y condiciones de FH PERÚ

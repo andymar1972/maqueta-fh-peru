@@ -1,0 +1,106 @@
+extends ../templates/template2
+block main
+  section.proyectos.section
+    .proyectos__container.container
+      h2.title NUESTROS PROYECTOS
+      .proyectos__grid
+        article.card.proyectos__item
+          .card__cover--modify
+            p.card__text--modify Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi molestias amet reprehenderit! 
+          figure.card__img
+            img(src="assets/img/economia-sustentable.jpg", alt="")
+          a.card__button.button-long(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Esto es un resumen del proyecto de prueba
+          figure.card__img
+            img(src="assets/img/anemia-desnutricion.jpg", alt="")
+          a.card__button.button-long(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. 
+          figure.card__img
+            img(src="assets/img/lideres-transformados.jpg", alt="")
+          a.card__button.button-long--orange(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Alcanzando su potencial 
+          figure.card__img
+            img(src="assets/img/alcanzando-potencial.jpg", alt="")
+          a.card__button.button-long--purple(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Rechazamos todo tipo de violencia, trabajando en el empoderamiento de las mujeres e involucramiento de los hombres para buscar la igualdad y equidad de género dentro de sus comunidades. 
+          figure.card__img
+            img(src="assets/img/hogares-libres.jpg", alt="")
+          a.card__button.button-long--purple(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Rechazamos todo tipo de violencia, trabajando en el empoderamiento de las mujeres e involucramiento de los hombres para buscar la igualdad y equidad de género dentro de sus comunidades. 
+          figure.card__img
+            img(src="assets/img/hogares-libres.jpg", alt="")
+          a.card__button.button-long--purple(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Rechazamos todo tipo de violencia, trabajando en el empoderamiento de las mujeres e involucramiento de los hombres para buscar la igualdad y equidad de género dentro de sus comunidades. 
+          figure.card__img
+            img(src="assets/img/hogares-libres.jpg", alt="")
+          a.card__button.button-long--purple(href="#") DONA <i class="far fa-heart"></i>
+        article.card
+          .card__cover--modify
+            p.card__text--modify Rechazamos todo tipo de violencia, trabajando en el empoderamiento de las mujeres e involucramiento de los hombres para buscar la igualdad y equidad de género dentro de sus comunidades. 
+          figure.card__img
+            img(src="assets/img/hogares-libres.jpg", alt="")
+          a.card__button.button-long--purple(href="#") DONA <i class="far fa-heart"></i>
+  section.dona-personas.section
+    .catalogo__container.container
+      h2.title CATÁLOGO DE LA ESPERANZA
+      p.subtitle Con tu apoyo podrás lograr que más proyectos se desarrollen en las comunidades donde intervenimos y así seguir transformando sus vidas.
+      <div id="catalogo" class="glide dona-empresas__slider">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span#btn-animales.card__button.button-long--orange ANIMALES <i class="far fa-heart"></i>
+            </li>
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span.card__button.button-long--blue EDUCACIÓN <i class="far fa-heart"></i>
+            </li>
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span.card__button.button-long--purple SALUD <i class="far fa-heart"></i>
+            </li>
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span.card__button.button-long--orange ANIMALES <i class="far fa-heart"></i>
+            </li>
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span.card__button.button-long--blue EDUCACIÓN <i class="far fa-heart"></i>
+            </li>
+            <li class="glide__slide">
+              article.dona-personas__card.card
+                figure.card__img
+                  img(src="assets/img/anemia-desnutricion.jpg", alt="")
+                span.card__button.button-long--purple SALUD <i class="far fa-heart"></i>
+            </li>
+          </ul>
+        </div>
+          <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-caret-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-caret-right"></i></button>
+        </div>
+      </div>
+      .catalogo__ajax
+        .proyectos__grid#contenido-ajax

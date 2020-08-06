@@ -17,16 +17,27 @@
     }
   }
   &__data {
-    border: 0.1rem solid $primary-color;
+    // border: 0.1rem solid $primary-color;
     color: $white;
     padding: 3rem;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+      border-color: $primary-color;
+      & a {
+        background-color: $white;
+        color: $primary-color;
+      }
+    }
   }
   &__title {
     margin: 0;
     letter-spacing: 0.1rem;
     font-size: 2.5rem;
   }
-  &__text{
+  &__text {
     font-size: 2rem;
   }
   &__centrar {
@@ -37,11 +48,10 @@
       flex: none;
     }
   }
-  &__right{
+  &__right {
     display: flex;
     justify-content: flex-end;
   }
   &__button {
-    
   }
 }

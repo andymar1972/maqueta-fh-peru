@@ -1,0 +1,43 @@
+.card-title{
+  position: relative;
+  height: 100%;
+  &__img{
+    height: 100%;
+    & img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__video{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    font-size: 10rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    color: rgba($color:#ffff, $alpha: .8);
+    transition-property: color;
+    transition-duration: .5s;
+    &:hover{
+      color: rgba($color:#ffff, $alpha: 1);
+    }
+
+  }
+  &__title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: .5);
+    color: $white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: $main-title;
+    letter-spacing: .2rem;
+    padding: 2rem 0;
+    margin: 0;
+  }
+}

@@ -1,5 +1,5 @@
 .pago-catalogo {
-  &__title{
+  &__title {
     grid-column: 1/3;
     grid-row: 1/2;
     text-align: left;
@@ -19,11 +19,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     align-items: flex-start;
-    &__text{
-      background-color: $primary-color;
+    &__text {
+      background-color: $tertiary-color;
       color: $white;
       height: 100%;
       display: flex;
+      font-size: 2rem;
       justify-content: center;
       align-items: center;
     }

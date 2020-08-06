@@ -20,12 +20,32 @@ $color-font: var(--color-font);
 $white: var(--white);
 $color-font-alternative: var(--color-font-alternative);
 
-.border-green{
-  color: $primary-color;
+.border-green {
+  border: 0.1rem solid $primary-color;
 }
-.border-orange{
-
+.border-orange {
+  border: 0.1rem solid $secondary-color;
 }
-.border-blue{
-  
+.border-blue {
+  border: 0.1rem solid $tertiary-color;
+}
+.border-purple {
+  border: 0.1rem solid $fourth-color;
+}
+.color-green {
+  color: $primary-color !important;
+}
+.color-orange {
+  color: $secondary-color !important;
+}
+.color-blue {
+  color: $tertiary-color !important;
+}
+.color-purple {
+  color: $fourth-color !important;
+}
+.button-long__icon{
+  & svg{
+    margin-right: 1rem;
+  }
 }

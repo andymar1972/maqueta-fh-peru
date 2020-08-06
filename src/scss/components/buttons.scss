@@ -12,19 +12,25 @@
     background-color: $primary-color;
   }
 }
+button{
+  outline: none;
+}
+input{
+  outline: none;
+}
 .button {
   @extend%button;
 }
 .button--orange {
-  @extend %button-long;
+  @extend %button;
   background-color: $secondary-color;
 }
 .button--blue {
-  @extend %button-long;
+  @extend %button;
   background-color: $tertiary-color;
 }
 .button--purple {
-  @extend %button-long;
+  @extend %button;
   background-color: $fourth-color;
 }
 

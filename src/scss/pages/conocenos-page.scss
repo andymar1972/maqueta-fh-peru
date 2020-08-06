@@ -19,4 +19,123 @@
     color: $white;
     line-height: 1.5;
   }
+  &__section {
+    margin-top: 6rem;
+    border: 0.1rem solid $primary-color;
+    display: grid;
+    grid-template-columns: auto 75rem;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+  &__mapa {
+  }
+  &__info {
+    &__title {
+      margin-top: 8rem;
+    }
+    &__text {
+      color: $white;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+  }
+  &__box {
+    padding: 3rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    border: 0.1rem solid $secondary-color;
+    &__text {
+      color: $secondary-color;
+      font-size: 3rem;
+      text-align: center;
+    }
+    &__region {
+      background-color: $secondary-color;
+      color: $white;
+      text-align: center;
+      width: 30rem;
+      padding: 1rem 0rem;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__list {
+      color: $white;
+      line-height: 1.5;
+      list-style: none;
+      & li {
+        font-size: 2.5rem;
+        &::before {
+          content: "\2022";
+          color: $secondary-color;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+}
+
+#tumbes,
+#lambayeque,
+#piura,
+#la-libertad,
+#ancash,
+#callao,
+#ica,
+#arequipa,
+#moquegua,
+#tacna {
+  fill: rgb(178, 196, 109);
+  transition-property: fill;
+  transition-duration: 0.4s;
+  &:hover {
+    fill: $secondary-color;
+    cursor: pointer;
+  }
+}
+#lima,
+#huancavelica {
+  fill: rgb(0, 170, 157);
+  transition-property: fill;
+  transition-duration: 0.4s;
+  &:hover {
+    fill: $secondary-color;
+    cursor: pointer;
+  }
+}
+#amazonas,
+#cajamarca,
+#san-martin,
+#huanuco,
+#pasco,
+#junin,
+#cusco,
+#apurimac,
+#ayacucho,
+#puno {
+  fill: rgb(159, 181, 72);
+  transition-property: fill;
+  transition-duration: 0.4s;
+  &:hover {
+    fill: $secondary-color;
+    cursor: pointer;
+  }
+}
+#loreto,
+#ucayali,
+#madre-de-dios {
+  fill: rgb(142, 162, 71);
+  transition-property: fill;
+  transition-duration: 0.4s;
+  &:hover {
+    fill: $secondary-color;
+    cursor: pointer;
+  }
 }

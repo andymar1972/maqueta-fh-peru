@@ -7,13 +7,13 @@
   }
   &__item{
     padding: 5rem 5rem;
-    border: .1rem solid $white;
+    // border: .1rem solid $white;
     display: flex;
     flex-direction: column;
     align-items: center;
     & svg{
       font-size: 6rem;
-      color: $white;
+      // color: $white;
     }
   }
   &__text{
