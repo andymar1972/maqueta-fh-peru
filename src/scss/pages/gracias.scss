@@ -1,11 +1,12 @@
 .gracias {
   &__img {
-    height: 20rem;
-    background-color: yellow;
+    height: 30rem;
+    // background-colorgb(179, 179, 144)low;
     & img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      object-position: 50% 40%;
     }
     margin-bottom: 3rem;
   }
