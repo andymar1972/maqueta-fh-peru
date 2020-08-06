@@ -18,7 +18,7 @@ img {
   max-width: 100%;
   display: block;
 }
-button{
+button {
   border: none;
 }
 h1,
@@ -69,8 +69,12 @@ input {
 .container {
   padding-left: 7rem;
   padding-right: 7rem;
+  @include b-800 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
-.main{
+.main {
   background-color: $background;
 }
 .section {
@@ -86,6 +90,12 @@ input {
   font-family: $main-title;
   margin: 0;
   letter-spacing: 0.4rem;
+  @include b-800 {
+    font-size: 4rem
+  }
+  @include b-580{
+    font-size: 3rem;
+  }
 }
 .subtitle {
   color: $white;
@@ -94,6 +104,15 @@ input {
   text-align: center;
   max-width: 74rem;
   font-size: 2.1rem;
+  @include b-800 {
+    max-width: 100%;
+    width: 92%;
+    font-size: 2rem;
+  }
+  @include b-580{
+    width: 100%;
+    font-size: 1.8rem;
+  }
 }
 .ocultar {
   display: none;

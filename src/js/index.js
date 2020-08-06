@@ -1,6 +1,11 @@
-let banner = document.querySelector(".glide");
+let banner = document.querySelector("#banner");
 if (banner) {
-  new Glide(".glide").mount();
+  var glideBanner = new Glide(banner, {
+    type: "carousel",
+    perView: 1,
+    autoplay: 2000,
+  });
+  glideBanner.mount();
 }
 
 let empresas = document.getElementById("intro");
@@ -8,6 +13,7 @@ if (empresas) {
   var glide = new Glide(empresas, {
     type: "carousel",
     perView: 6,
+    autoplay: 2000,
   });
   glide.mount();
 }
@@ -16,6 +22,7 @@ if (catalogo) {
   var glideCatalogo = new Glide(catalogo, {
     type: "carousel",
     perView: 3,
+    autoplay: 3000,
   });
 
   glideCatalogo.mount();

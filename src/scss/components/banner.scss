@@ -11,7 +11,8 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-image: linear-gradient(90deg,
+      background-image: linear-gradient(
+        90deg,
         rgba(0, 0, 0, 1),
         rgba(255, 255, 255, 0) 50%
       );
@@ -22,9 +23,12 @@
       width: 100%;
       height: 82rem;
       object-fit: cover;
+      @include b-800 {
+        height: 90vh;
+      }
     }
   }
-  &__data{
+  &__data {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -33,20 +37,32 @@
     color: $white;
     max-width: 85rem;
   }
-  &__title{
+  &__title {
     margin: 0;
     font-size: 5rem;
     font-family: $main-title;
     text-transform: uppercase;
+    @include b-800 {
+      font-size: 4rem;
+    }
+    @include b-580{
+      font-size: 3rem;
+    }
   }
-  &__text{
+  &__text {
     font-family: $main-font;
     font-size: 1.8rem;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     line-height: 1.3;
     text-transform: uppercase;
+    @include b-800 {
+      font-size: 1.6rem;
+    }
+    @include b-580{
+      font-size: 1.4rem;
+    }
   }
-  &__button{
+  &__button {
     margin-top: 1rem;
   }
 }

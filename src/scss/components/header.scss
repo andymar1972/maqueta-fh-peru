@@ -2,6 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 15;
+  @include b-800 {
+    display: none;
+  }
   &__top {
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;

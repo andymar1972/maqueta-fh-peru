@@ -5,13 +5,25 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     grid-template-rows: 35rem;
+    @include b-800 {
+      grid-template-columns: 1fr;
+    }
+    @include b-580 {
+      grid-template-rows: auto;
+    }
   }
   &__img {
     height: 100%;
+    @include b-580 {
+      height: auto;
+    }
     & img {
       height: 100%;
       width: 100%;
       object-fit: cover;
+      @include b-580 {
+        height: auto;
+      }
     }
   }
   &__text {
@@ -23,21 +35,50 @@
     margin-top: 6rem;
     border: 0.1rem solid $primary-color;
     display: grid;
-    grid-template-columns: auto 75rem;
-    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     gap: 3rem;
+    padding: 6rem;
+    @include b-800 {
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 0;
+    }
+    @include b-580 {
+      padding: 2rem;
+    }
   }
   &__mapa {
+    @include b-800 {
+      display: flex;
+      justify-content: center;
+    }
+    @include b-580 {
+      & svg {
+        width: 80%;
+        height: 100%;
+      }
+    }
   }
   &__info {
     &__title {
       margin-top: 8rem;
+      @include b-800 {
+        margin-top: 0;
+      }
+      @include b-580 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+      }
     }
     &__text {
       color: $white;
       text-align: center;
       font-size: 2.5rem;
       margin-top: 1rem;
+      @include b-580 {
+        font-size: 2rem;
+      }
     }
   }
   &__box {
@@ -47,10 +88,16 @@
     margin-right: auto;
     margin-top: 4rem;
     border: 0.1rem solid $secondary-color;
+    @include b-580 {
+      width: 100%;
+    }
     &__text {
       color: $secondary-color;
       font-size: 3rem;
       text-align: center;
+      @include b-580 {
+        font-size: 2rem;
+      }
     }
     &__region {
       background-color: $secondary-color;
@@ -62,13 +109,24 @@
       font-size: 2.8rem;
       margin-left: auto;
       margin-right: auto;
+      @include b-580 {
+        width: 100%;
+        font-size: 2rem;
+      }
     }
     &__list {
       color: $white;
       line-height: 1.5;
       list-style: none;
+      @include b-580 {
+        margin-left: 0;
+        padding-left: 2rem;
+      }
       & li {
         font-size: 2.5rem;
+        @include b-580 {
+          font-size: 1.6rem;
+        }
         &::before {
           content: "\2022";
           color: $secondary-color;

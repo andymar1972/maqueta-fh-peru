@@ -23,15 +23,17 @@
     <meta name="twitter:description" content=""/>
     <meta name="twitter:image:src" content=""/>
     <!--FONTAWESOME-->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1596736707513"/>
-    <script src="assets/fontawesome/js/all.min.js?t=1596736707513"></script>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css?t=1596747697680"/>
+    <script src="assets/fontawesome/js/all.min.js?t=1596747697680"></script>
     <!--GLIDE-->
-    <link rel="stylesheet" href="assets/glide/dist/css/glide.core.min.css?t=1596736707513"/>
-    <link rel="stylesheet" href="assets/glide/dist/css/glide.theme.min.css?t=1596736707513"/>
+    <link rel="stylesheet" href="assets/glide/dist/css/glide.core.min.css?t=1596747697680"/>
+    <link rel="stylesheet" href="assets/glide/dist/css/glide.theme.min.css?t=1596747697680"/>
     <!--MODAL VIDEO-->
-    <link rel="stylesheet" href="assets/modal-video/css/modal-video.min.css?t=1596736707513"/>
+    <link rel="stylesheet" href="assets/modal-video/css/modal-video.min.css?t=1596747697680"/>
+    <!--MODAL-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
     <!--STYLE BASE-->
-    <link rel="stylesheet" href="css/styles.css?t=1596736707513"/>
+    <link rel="stylesheet" href="css/styles.css?t=1596747697680"/>
     <title>FH PERÚ</title>
     <meta name="description" content="content"/>
   </head>
@@ -72,7 +74,7 @@
         <div class="pago-catalogo__container container">
           <h2 class="title">TU COLABORACIÓN ES IMPORTANTE</h2>
           <p class="subtitle">Para realizar una consulta genera electrónico complete el siguiente formulario. Le responderemoslo antes posible</p>
-          <form class="form--colaboracion" action="">
+          <form class="form--colaboracion" id="form-colaboracion" action="">
             <div class="form__group--colaboracion">
               <input class="input" type="text" placeholder="NOMBRE"/>
             </div>
@@ -98,12 +100,13 @@
               <input type="checkbox" name="" id="checkform"/>
               <label for="checkform">Acepto los términos y condiciones de FH PERÚ</label>
             </div>
-            <div class="form__group--colaboracion">
-              <button class="button-long" type="submit">DONA AHORA</button>
-            </div>
+            <div class="form__group--colaboracion"><a class="button-long" id="btn-submit-colaboracion" type="submit" href="ex1" rel="modal:open">DONA AHORA</a></div>
           </form>
         </div>
-      </section>
+      </section><div id="ex1" class="modal">
+<p>Thanks for clicking. That felt good.</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
     </main>
     <footer class="footer">
       <div class="footer__container container">
@@ -119,9 +122,10 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.js?t=1596736707513"></script>
-    <script src="assets/glide/dist/glide.min.js?t=1596736707513"></script>
-    <script src="assets/modal-video/js/jquery-modal-video.min.js?t=1596736707513"></script>
-    <script src="js/scripts-min.js?t=1596736707513"></script>
+    <script src="js/jquery.js?t=1596747697680"></script>
+    <script src="assets/glide/dist/glide.min.js?t=1596747697680"></script>
+    <script src="assets/modal-video/js/jquery-modal-video.min.js?t=1596747697680"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/scripts-min.js?t=1596747697680"></script>
   </body>
 </html>

@@ -21,6 +21,9 @@
     color: rgba($color:#ffff, $alpha: .8);
     transition-property: color;
     transition-duration: .5s;
+    @include b-580 {
+      font-size: 5rem;
+    }
     &:hover{
       color: rgba($color:#ffff, $alpha: 1);
     }
@@ -39,5 +42,9 @@
     letter-spacing: .2rem;
     padding: 2rem 0;
     margin: 0;
+    @include b-580 {
+      font-size: 2rem;
+      padding: 1rem 0;
+    }
   }
 }

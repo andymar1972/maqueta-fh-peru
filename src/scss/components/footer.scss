@@ -5,6 +5,10 @@
   &__container{
     display: grid;
     grid-template-columns: 1fr 60rem;
+    @include b-800{
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
   &__list{
     @include reset-list;
@@ -23,6 +27,9 @@
     font-size: 2.5rem;
     &:first-child{
       margin-top: 0;
+    }
+    @include b-580{
+      font-size: 2rem;
     }
   }
   &__icons{
