@@ -45,7 +45,7 @@
     @include b-800 {
       font-size: 4rem;
     }
-    @include b-580{
+    @include b-580 {
       font-size: 3rem;
     }
   }
@@ -58,11 +58,17 @@
     @include b-800 {
       font-size: 1.6rem;
     }
-    @include b-580{
+    @include b-580 {
       font-size: 1.4rem;
     }
   }
   &__button {
     margin-top: 1rem;
+  }
+  & .glide__arrow--left {
+    left: 2rem;
+  }
+  & .glide__arrow--right {
+    right: 2rem;
   }
 }
