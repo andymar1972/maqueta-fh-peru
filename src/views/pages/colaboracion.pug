@@ -8,9 +8,10 @@ block main
         .form__group--colaboracion
           input.input(type="text" placeholder="NOMBRE")
         .form__group--colaboracion
-          select.input(name="")
-            option(value="1") DNI
-            option(value="1") RUC
+          select.input.bold-combo(name="")
+            option.bold-combo(disabled selected) TIPO DE DOCUMENTO 
+            option.bold-combo(value="1") DNI
+            option.bold-combo(value="1") CARNET DE EXTRANJERIA
         .form__group--colaboracion
           input.input(type="text" placeholder="APELLIDOS")
         .form__group--colaboracion

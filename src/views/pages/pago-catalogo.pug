@@ -11,10 +11,13 @@ block main
           .pago-catalogo__title.title.color-blue CATÁLOGO DE LA ESPERANZA
           .pago-catalogo__form__text PRODUCTO
           .pago-catalogo__form__group
-            input.input(type="text" value="POLLO")
+            input.input(type="text" value="POLLO" disabled)
           .pago-catalogo__form__text CANTIDAD
           .pago-catalogo__form__group
-            input.input(type="number" value="POLLO" placeholder="1unid")
+            input.input#form-catalogo-numero(type="number" value="1" min="1")
+          .pago-proyecto__form__group--inversion
+            span INVERSIÓN
+            span.bold S/<span id="form-catalogo-inversion">20</span> PEN
           .pago-catalogo__form__group
             button.button-long--blue DONA AHORA
           .pago-catalogo__form__group

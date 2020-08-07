@@ -1,4 +1,4 @@
-$("#btn-animales").click(function () {
+$(".btn-animales").click(function () {
   $.ajax({
     url: "pag-animales.html",
     data: "data",
@@ -9,7 +9,7 @@ $("#btn-animales").click(function () {
     },
   });
 });
-$("#btn-educacion").click(function () {
+$(".btn-educacion").click(function () {
   $.ajax({
     url: "pag-educacion.html",
     data: "data",
@@ -20,7 +20,7 @@ $("#btn-educacion").click(function () {
     },
   });
 });
-$("#btn-salud").click(function () {
+$(".btn-salud").click(function () {
   $.ajax({
     url: "pag-salud.html",
     data: "data",
