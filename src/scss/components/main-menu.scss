@@ -3,15 +3,46 @@
   @include reset-list;
   display: flex;
   align-items: center;
+  @include b-800 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 4rem;
+    width: 100%;
+    display: none;
+  }
+  @include b-580 {
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
   &__item {
     margin-left: 4rem;
     font-size: 1.8rem;
     font-family: $second-font;
     letter-spacing: 0.1rem;
     position: relative;
+    @include b-800 {
+      margin-left: 0;
+      // padding: 1rem 0;
+      text-align: left;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
   &__link {
     display: inline-block;
+    @include b-800 {
+      padding: 2rem 0;
+      width: 100%;
+    }
+    & svg:first-child {
+      display: none;
+    }
+    @include b-800 {
+      & svg:first-child {
+        display: inline-block;
+      }
+    }
     &--modify {
       display: flex;
       align-items: center;
@@ -19,6 +50,22 @@
       padding: 1.5rem 2.5rem;
       border-radius: 1rem;
       font-size: 2rem;
+      & svg:first-child {
+        display: none;
+      }
+      @include b-800 {
+        background-color: transparent;
+        font-size: 1.8rem;
+        padding: 2rem 0;
+        & svg:first-child {
+          font-size: 1.8rem;
+          display: inline-block;
+        }
+        & svg:last-child {
+          display: none;
+        }
+      }
+
       & svg {
         margin-left: 0.7rem;
         font-size: 2.5rem;
@@ -35,6 +82,16 @@
     border-radius: 1rem;
     overflow: hidden;
     width: 24rem;
+    @include b-800 {
+      width: auto;
+      position: relative;
+      left: 0;
+      transform: translateX(0%);
+      display: none;
+      background-color: $primary-color;
+      width: 100%;
+      border-radius: 0;
+    }
     & a {
       background-color: #000;
       white-space: nowrap;
@@ -44,6 +101,11 @@
       font-family: $second-font;
       transition-property: background-color, color;
       transition-duration: 0.6s;
+      @include b-800 {
+        background-color: transparent;
+        padding: 2rem 1rem;
+        text-align: left;
+      }
       &:hover {
         background-color: rgb(240, 240, 240);
         color: #000;
@@ -52,5 +114,10 @@
   }
   .main-menu__item:hover .main-menu__subitem {
     display: block;
+  }
+  @include b-580 {
+    .main-menu__item:hover .main-menu__subitem {
+      display: none;
+    }
   }
 }

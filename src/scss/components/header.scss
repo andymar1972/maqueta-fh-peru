@@ -3,7 +3,7 @@
   // top: 0;
   z-index: 15;
   @include b-800 {
-    display: none;
+    // display: none;
   }
   &__top {
     padding-top: 1.6rem;
@@ -11,14 +11,28 @@
     display: flex;
     justify-content: flex-end;
     background-color: rgb(240, 240, 240);
+    @include b-580 {
+      justify-content: space-between;
+      width: 100%;
+    }
   }
   &__list {
     @include reset-list;
     display: flex;
     align-items: center;
+    @include b-580 {
+      justify-content: space-between;
+      width: 100%;
+    }
     & li {
       margin-left: 2rem;
       font-size: 1.4rem;
+      @include b-580 {
+        white-space: nowrap;
+        // margin-left: 1rem;
+        margin-left: 0;
+        font-size: 1.2rem;
+      }
       &:first-child {
         margin-left: 0;
       }
@@ -38,8 +52,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 3rem;
+    position: relative;
     padding-bottom: 3rem;
     z-index: 10;
+    @include b-800 {
+      align-items: flex-start;
+      flex-direction: column;
+    }
   }
   &__main {
     @extend %main;
@@ -60,5 +79,26 @@
   }
   &__logo {
     width: 26rem;
+    @include b-800 {
+      width: 20rem;
+      flex: none;
+    }
+  }
+  &__nav {
+    @include b-800 {
+      width: 100%;
+    }
+  }
+  &__btn {
+    display: none;
+    @include b-800 {
+      display: block;
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      color: $white;
+      font-size: 2.5rem;
+      transform: translateX(-50%) translateY(-50%);
+    }
   }
 }

@@ -1,0 +1,61 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  border-top: 0.1rem solid var(--primary-color);
+  background-color: var(--primary-color);
+  list-style: none;
+}
+
+.menu li {
+  font-size: 1.7rem;
+  font-family: "AvertaStd-Bold";
+  text-transform: uppercase;
+  /* color: #fff; */
+  padding: 1.5rem;
+}
+
+.menu__item {
+  /* margin-top: 2.2rem; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+}
+.menu__item svg {
+  margin-left: 0.5rem;
+  font-size: 2.2rem;
+  transition: transform 0.5s;
+}
+.menu__item--event svg {
+  transform: rotate(180deg);
+}
+
+.menu__item:first-of-type {
+  margin-top: 0rem;
+}
+
+.menu__subitem {
+  text-transform: uppercase;
+  /* margin-top: 2.2rem; */
+  color: #000;
+  font-family: "AvertaStd-Bold";
+}
+
+.menu__subitem:hover {
+  text-transform: uppercase;
+  /* margin-top: 2.2rem; */
+  color: #fff !important;
+  font-family: "AvertaStd-Bold";
+  background-color: var(--primary-color) !important;
+}
+
+.drop-down {
+  display: none;
+  /* background-color: #fff; */
+  /* background-color: var(--primary-color); */
+  /* margin-left: 2rem; */
+  background-color: #fff;
+  list-style: none;
+  color: #000;
+}
