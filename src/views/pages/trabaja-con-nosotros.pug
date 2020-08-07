@@ -21,7 +21,7 @@ block main
               h3.card-trabajo__title CONTADOR 01
               p.card-trabajo__text SÉ UN LIDER EN TU CARRERA
               a.card-trabajo__button.button-long(href="#" target="_blank") DESCARGA LA CONVOCATORIA
-        .trabaja__form
+        form(action="gracias-registro.html").trabaja__form
           p.trabaja__form__title LLENA EL FORMULARIO
           .trabaja__form__group
             input.input(type="text" placeholder="NOMBRE")
@@ -43,7 +43,7 @@ block main
               label.trabaja__form__action(for="file") SUBIR CV <i class="fas fa-file-upload"></i>
               input.ocultar#file(type="file", name="")
             .trabaja__form__field
-              button.trabaja__form__action ENVIAR <i class="far fa-envelope"></i>
+              button.trabaja__form__action.button ENVIAR <i class="far fa-envelope"></i>
           .trabaja__form__group
             input(type="checkbox", name="" id="checkform")
             label(for="checkform") Acepto los términos y condiciones de FH PERÚ
