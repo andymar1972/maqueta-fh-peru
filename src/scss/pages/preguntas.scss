@@ -2,6 +2,9 @@
   &__text{
     color: $white;
     font-size: 2rem;
+    @include b-580{
+      font-size: 1.6rem;
+    }
   }
   &__img{
     margin-top: 4rem;

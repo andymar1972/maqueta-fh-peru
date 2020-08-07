@@ -3,6 +3,9 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: flex-start;
+  @include b-580 {
+    grid-template-columns: 1fr;
+  }
   &__data {
     display: flex;
     color: $white;

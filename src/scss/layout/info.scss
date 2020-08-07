@@ -4,13 +4,19 @@
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
     margin-top: 3rem;
+    @include b-800{
+      grid-template-columns: 1fr;
+    }
   }
   &__item{
-    padding: 5rem 5rem;
+    padding: 5rem;
     // border: .1rem solid $white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include b-580{
+      padding: 3rem;
+    }
     & svg{
       font-size: 6rem;
       // color: $white;
@@ -21,5 +27,8 @@
     text-align: center;
     font-size: 2rem;
     line-height: 1.5;
+    @include b-580{
+      font-size: 1.8rem;
+    }
   }
 }

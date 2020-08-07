@@ -2,6 +2,9 @@
   &__img {
     height: 30rem;
     // background-colorgb(179, 179, 144)low;
+    @include b-580{
+      height: 10rem;
+    }
     & img {
       height: 100%;
       width: 100%;

@@ -7,14 +7,27 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, auto);
     gap: 1rem;
+    @include b-800 {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      width: 100%;
+    }
     &__img {
       grid-column: 1/4;
       grid-row: 1/6;
+      @include b-800 {
+        grid-column: auto;
+        grid-row: auto;
+      }
     }
     &__group {
       &:nth-child(2) {
         grid-column: 4/7;
         grid-row: 1/2;
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
       }
       &:nth-child(3) {
         grid-column: 4/7;
@@ -22,12 +35,19 @@
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(2, 1fr);
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
         & label {
           background-color: $white;
           display: flex;
           align-items: center;
           justify-content: center;
           color: #000;
+          @include b-580 {
+            font-size: 1.3rem;
+          }
           &:active {
             background-color: $primary-color;
             color: $white;
@@ -39,12 +59,19 @@
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(3, 1fr);
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
         & label {
           background-color: $white;
           display: flex;
           align-items: center;
           justify-content: center;
           color: #000;
+          @include b-580 {
+            font-size: 1.6rem;
+          }
           &:active {
             background-color: $primary-color;
             color: $white;
@@ -55,6 +82,10 @@
         grid-column: 4/7;
         background-color: $primary-color;
         padding: 0 2rem;
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
         & p {
           display: flex;
           justify-content: space-between;
@@ -65,9 +96,17 @@
       }
       &:nth-child(6) {
         grid-column: 4/7;
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
       }
       &:nth-child(7) {
         grid-column: 4/7;
+        @include b-800 {
+          grid-column: auto;
+          grid-row: auto;
+        }
       }
     }
   }

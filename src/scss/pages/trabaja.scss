@@ -5,6 +5,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
     align-items: flex-start;
+    @include b-800 {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
   }
   &__puestos {
     display: grid;
@@ -15,28 +19,44 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+    @include b-580 {
+      grid-template-columns: 1fr;
+    }
     &__title {
       grid-column: 1/3;
       font-size: 3rem;
       color: $white;
       margin: 0;
       margin-bottom: 1rem;
+      @include b-580 {
+        grid-column: auto;
+        grid-row: auto;
+      }
     }
     &__group {
       &:nth-child(8) {
         grid-column: 1/3;
         display: grid;
         grid-template-columns: 65% 1fr 1fr;
-        gap: .5rem;
+        gap: 0.5rem;
+        @include b-580 {
+          grid-column: auto;
+          grid-row: auto;
+          grid-template-columns: 1fr;
+        }
       }
-      &:last-child{
+      &:last-child {
         grid-column: 2/3;
         margin-top: 1rem;
-        & label{
+        @include b-580 {
+          grid-column: auto;
+          grid-row: auto;
+        }
+        & label {
           font-size: 1.6rem;
         }
       }
-      & textarea{
+      & textarea {
         height: 12rem;
       }
     }
@@ -50,11 +70,12 @@
       justify-content: center;
       height: 100%;
       width: 100%;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      white-space: nowrap;
       color: $white;
       & svg {
         font-size: 4.5rem;
-        margin-top: .5rem;
+        margin-top: 0.5rem;
       }
     }
   }

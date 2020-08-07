@@ -2,11 +2,17 @@
   &__box {
     border: 0.1rem solid $primary-color;
     padding: 4rem 8rem;
+    @include b-580 {
+      padding: 3rem;
+    }
   }
   &__text {
     color: $white;
     font-size: 2rem;
     line-height: 1.5;
+    @include b-580 {
+      font-size: 1.6rem;
+    }
   }
   &__right {
     display: flex;
