@@ -1,7 +1,7 @@
-const formColaboracion = document.getElementById("form-colaboracion");
+// const formColaboracion = document.getElementById("form-colaboracion");
 
-if (formColaboracion) {
-  formColaboracion.addEventListener("submit", (e) => {
-    e.preventDefault();
-  });
-}
+// if (formColaboracion) {
+//   formColaboracion.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//   });
+// }

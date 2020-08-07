@@ -22,7 +22,7 @@ if (catalogo) {
   var glideCatalogo = new Glide(catalogo, {
     type: "carousel",
     perView: 3,
-    autoplay: 3000,
+    // autoplay: 3000,
   });
 
   glideCatalogo.mount();

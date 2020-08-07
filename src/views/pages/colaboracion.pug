@@ -4,7 +4,7 @@ block main
     .pago-catalogo__container.container
       h2.title TU COLABORACIÓN ES IMPORTANTE
       p.subtitle Para realizar una consulta genera electrónico complete el siguiente formulario. Le responderemoslo antes posible
-      form.form--colaboracion#form-colaboracion(action="")
+      form.form--colaboracion#form-colaboracion(action="gracias.html")
         .form__group--colaboracion
           input.input(type="text" placeholder="NOMBRE")
         .form__group--colaboracion
@@ -23,11 +23,11 @@ block main
           input(type="checkbox", name="" id="checkform")
           label(for="checkform") Acepto los términos y condiciones de FH PERÚ
         .form__group--colaboracion
-          a#btn-submit-colaboracion.button-long(type='submit' href="ex1" rel="modal:open") DONA AHORA
-  <div id="ex1" class="modal">
-    <p>Thanks for clicking. That felt good.</p>
-    <a href="#" rel="modal:close">Close</a>
-  </div>
+          button#btn-submit-scolaboracion.button-long(type='submit' href="ex1" rel="modal:open") DONA AHORA
+  //- <div id="ex1" class="modal">
+  //-   <p>Thanks for clicking. That felt good.</p>
+  //-   <a href="#" rel="modal:close">Close</a>
+  //- </div>
 
 
         
