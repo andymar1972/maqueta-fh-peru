@@ -1,8 +1,6 @@
 let banner = document.querySelector("#banner");
 if (banner) {
   var glideBanner = new Glide(banner, {
-    type: "carousel",
-    perView: 1,
     autoplay: 2000,
   });
   glideBanner.mount();
@@ -15,14 +13,18 @@ if (empresas) {
     perView: 6,
     autoplay: 2000,
     breakpoints: {
+      1400: {
+        perView: 4,
+      },
       800: {
-        perView: 4
+        perView: 4,
       },
       480: {
         perView: 1,
         autoplay: 3000,
-      }
-    }
+        focusAt: "center",
+      },
+    },
   });
   glide.mount();
 }
@@ -33,13 +35,13 @@ if (catalogo) {
     perView: 3,
     breakpoints: {
       800: {
-        perView: 2
+        perView: 2,
       },
       480: {
         perView: 1,
         autoplay: 3000,
-      }
-    }
+      },
+    },
   });
 
   glideCatalogo.mount();

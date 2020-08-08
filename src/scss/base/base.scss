@@ -58,6 +58,13 @@ input {
     box-shadow: 0 0 1rem 1 rgba(0, 123, 255, 0.25);
   }
 }
+@include b-580 {
+  .glide__slide a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .button-icon {
   @include b-580 {
     display: flex !important;
