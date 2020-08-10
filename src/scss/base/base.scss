@@ -143,3 +143,7 @@ input {
 .bold-combo {
   font-weight: 700;
 }
+.main a:hover,
+.main button:hover {
+  background-color: $primary-color !important;
+}

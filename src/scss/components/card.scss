@@ -12,7 +12,7 @@
     transform: translateY(calc(100% - 12rem));
     transition-property: transform;
     transition-duration: 0.8s;
-    @include b-580{
+    @include b-580 {
       transform: translateY(calc(100% - 11.5rem));
     }
     &:hover {
@@ -51,7 +51,7 @@
     font-weight: 400;
     margin-left: auto;
     margin-right: auto;
-    @include b-580{
+    @include b-580 {
       font-size: 1.6rem;
     }
   }
@@ -60,10 +60,12 @@
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
-    @include b-580{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include b-580 {
       font-size: 1.4rem;
     }
-    &--modify{
+    &--modify {
       margin: 0;
       text-align: center;
       font-size: 2.1rem;
