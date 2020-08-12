@@ -57,3 +57,8 @@
     }
   }
 }
+.main .tabs-scroll li a {
+  &:hover {
+    background-color: transparent !important;
+  }
+}

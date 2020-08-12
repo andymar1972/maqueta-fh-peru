@@ -9,13 +9,13 @@
   color: $white;
   &:hover {
     color: $white;
-    background-color: $primary-color;
+    background-color: $primary-color !important;
   }
 }
-button{
+button {
   outline: none;
 }
-input{
+input {
   outline: none;
 }
 .button {
@@ -49,7 +49,7 @@ input{
   height: 100%;
   &:hover {
     color: $white;
-    background-color: $primary-color;
+    background-color: $primary-color !important;
   }
   & svg {
     margin-left: 1rem;

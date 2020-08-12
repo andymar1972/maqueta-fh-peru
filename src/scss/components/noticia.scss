@@ -25,13 +25,13 @@
     padding: 3rem;
     transition-property: background-color, color;
     transition-duration: 0.5s;
-    @include b-580{
+    @include b-580 {
       padding: 2rem;
     }
     &:hover {
       background-color: $primary-color;
       color: $white;
-      border-color: $primary-color;
+      border-color: $primary-color !important;
       & a {
         background-color: $white;
         color: $primary-color;
@@ -45,7 +45,7 @@
   }
   &__text {
     font-size: 2rem;
-    @include b-580{
+    @include b-580 {
       font-size: 1.6rem;
     }
   }
@@ -67,7 +67,5 @@
   &__right {
     display: flex;
     justify-content: flex-end;
-  }
-  &__button {
   }
 }
